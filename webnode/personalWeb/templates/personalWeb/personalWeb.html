@@ -1,0 +1,28 @@
+<!doctype html>
+{% load staticfiles %}
+<html>
+  <head>
+    <title>建立自己網站</title>
+    <meta charset = 'utf-8'>
+    <link rel='stylesheet' href='{% static "personalWeb/css/personalWeb.css" %}'>
+  </head>
+  <body>
+    <div id = wrapper>
+      <header>
+        <img id = 'webnode' src = '{% static "personalWeb/img/webnode.png" %}'>
+        <ul>
+          <li><a href = '{% url "main:main" %}'>首頁</a></li>
+          <li><a href = '{% url "personalWeb:personalWeb" %}'>個人網站</a></li>
+          <li><a href = '{% url "companyWeb:companyWeb" %}'>企業網站</a></li>
+          <li><a href='{% url "networkShop:networkShop" %}'>網路商城</a></li>
+        </ul>
+      </header>
+        <div id = 'content'>
+          <img src = '{% static "personalWeb/img/clock.png" %}'>
+          <h1>免費又簡單的網站設立工具</h1>
+          <span>一個快速且容易的網站設立工具，在網路上設計網站十分的簡單又免費。此外，您也可以使用自己的網域名稱。</span>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  </body>
+</html>

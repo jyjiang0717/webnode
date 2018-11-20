@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  padding: 0;
+  width: 100%;
+  background-color: #ebebeb;
+}
+header {
+  height: 7em;
+  background: url('../img/banner.png');
+  background-size: 100% 100%;
+}
+header ul {
+  list-style: none;
+  float: right;
+  margin: 3em 2em 0 0;
+}
+header ul li {
+  display: inline-block;
+  margin-left: 2em;
+}
+header ul li a {
+  text-decoration: none;
+  color: white;
+}
+#webnode {
+  display: inline-block;
+  margin: 1em 0 0 2em;
+}
+div#content {
+  margin: 4em;
+  padding: 4em;
+}
+.marginTop1 {
+  margin-top: 1em;
+}
+.marginTop5 {
+  margin-top: 5em;
+}
+.right {
+  text-align: right;
+}
+.center {
+  text-align: center;
+}

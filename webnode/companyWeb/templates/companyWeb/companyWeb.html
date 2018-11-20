@@ -1,0 +1,28 @@
+<!doctype html>
+{% load staticfiles %}
+<html>
+  <head>
+    <title>建立自己網站</title>
+    <meta charset = 'utf-8'>
+    <link rel='stylesheet' href='{% static "companyWeb/css/companyWeb1.css" %}'>
+  </head>
+  <body>
+    <div id = wrapper>
+      <header>
+        <img id = 'webnode' src = '{% static "companyWeb/img/webnode.png" %}'>
+        <ul>
+          <li><a href = '{% url "main:main" %}'>首頁</a></li>
+          <li><a href = '{% url "personalWeb:personalWeb" %}'>個人網站</a></li>
+          <li><a href = '{% url "companyWeb:companyWeb" %}'>企業網站</a></li>
+          <li><a href='{% url "networkShop:networkShop" %}'>網路商城</a></li>
+        </ul>
+      </header>
+        <div id = 'content'>
+          <img src = '{% static "companyWeb/img/circles.png" %}'>
+          <h1>一群優秀的用戶將為繞著您</h1>
+          <span>目前已經有超過 18,000,000 來自世界各地的公司企業、學生、藝術家和部落客等成為我們 Webnode 的滿意用戶。</span>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  </body>
+</html>
